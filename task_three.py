@@ -4,7 +4,7 @@ import re
 
 def normalize_phone(phone_number: str) -> str:
     """Returns sanitized phone number without any symbols except numbers and "+" prefix.
-        It also adds country code if absent
+    It also adds country code if absent
     """
     phone_number = re.sub(r'[\\\s()\-\\n\\t]+', '', phone_number)
 

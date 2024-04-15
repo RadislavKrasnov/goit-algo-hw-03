@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 def get_upcoming_birthdays(users: list) -> list:
     """Returns list of users that have birthday withing 7 days including current date
 
-        users
-            list of user dictionalries with name and birthday in format of YYYY.MM.DD
+    users
+        list of user dictionalries with name and birthday in format of YYYY.MM.DD
     """
     today = datetime.today().date()
     current_year =datetime.now().year
